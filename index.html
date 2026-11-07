@@ -6,7 +6,7 @@
 <title>Les Forteresses Invisibles · Claire Fortin</title>
 <meta name="description" content="21 lieux parmi les mieux gardés du monde, et les rares fois où quelqu'un a trouvé la faille. Le e-book de la chaîne Sécurité Extrême.">
 <meta property="og:title" content="Les Forteresses Invisibles">
-<meta property="og:description" content="Prisons, coffres-forts, bunkers, évasions : 21 dossiers expliqués par Claire Fortin.">
+<meta property="og:description" content="Prisons, coffres-forts, bunkers, évasions : 21 dossiers en photos, par Claire Fortin.">
 <meta property="og:image" content="img/mockup.webp">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230f1b2d'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23c9a24a' font-family='serif'>F</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,221 +15,207 @@
 :root{--navy:#0f1b2d;--navy2:#16243b;--creme:#f3ead7;--creme2:#e9dcc0;--or:#c9a24a;--rouge:#b3261e;--tinta:#1d1a16}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
-body{margin:0;overflow-x:clip;background:var(--navy);color:var(--creme);font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.6}
+body{margin:0;overflow-x:clip;background:var(--navy);color:var(--creme);font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.55}
 a{color:inherit}
-.w{max-width:1120px;margin:0 auto;padding:0 24px}
-.mono{line-height:2;font-family:'IBM Plex Mono',monospace;letter-spacing:.22em;text-transform:uppercase;font-size:12px}
-.k{color:var(--rouge);font-weight:600}
-.k.or{color:var(--or)}
-h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.08;margin:0}
-h2{font-size:clamp(32px,4.4vw,52px);margin:12px 0 18px}
+.w{max-width:1160px;margin:0 auto;padding:0 24px}
+.mono{font-family:'IBM Plex Mono',monospace;letter-spacing:.22em;text-transform:uppercase;font-size:12px;line-height:1.8}
+.k{color:var(--rouge);font-weight:600}.k.or{color:var(--or)}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.05;margin:0}
+h2{font-size:clamp(32px,4.4vw,54px);margin:10px 0 26px}
 em{color:var(--or);font-style:italic;font-weight:500}
-.btn{display:inline-block;background:var(--rouge);color:#fff;text-decoration:none;font-family:'IBM Plex Mono',monospace;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:14px;padding:18px 30px;border-radius:2px;box-shadow:0 10px 30px rgba(179,38,30,.35);transition:transform .15s}
+.btn{display:inline-block;background:var(--rouge);color:#fff;text-decoration:none;font-family:'IBM Plex Mono',monospace;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:15px;padding:19px 34px;border-radius:2px;box-shadow:0 10px 30px rgba(179,38,30,.4);transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
-/* hero */
-.hero{min-height:min(100vh,860px);display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:60px 0;position:relative}
-.hero::before{content:'';position:absolute;inset:0 -50vw;background:radial-gradient(60% 70% at 70% 40%,rgba(201,162,74,.12),transparent 70%);z-index:-1}
-.hero h1{font-size:clamp(46px,6.6vw,88px);font-weight:800;margin:22px 0 22px;letter-spacing:-.01em}
-.hero p.lead{font-size:21px;color:#ddd1b6;max-width:560px}
-.stamp{display:inline-block;border:2px solid var(--rouge);color:var(--rouge);padding:6px 12px;transform:rotate(-4deg);font-weight:600}
-.prix{display:flex;align-items:baseline;gap:14px;margin:28px 0 8px}
-.prix b{font-family:'Playfair Display',serif;font-size:46px;color:var(--creme)}
-.prix span{color:#a99d84;font-size:15px}
-.sous{color:#a99d84;font-size:14px;margin-top:12px}
-.mock{width:100%;max-width:470px;justify-self:center;filter:drop-shadow(0 40px 60px rgba(0,0,0,.5));animation:flot 6s ease-in-out infinite}
+.sous{color:#b5a98e;font-size:14px;margin-top:12px}
+.prix{display:flex;align-items:baseline;gap:12px;margin:22px 0 14px}
+.prix b{font-family:'Playfair Display',serif;font-size:48px}
+section{padding:90px 0}
+.creme{background:var(--creme);color:var(--tinta)}.creme h2{color:var(--navy)}
+/* hero com foto real */
+.hero{position:relative;min-height:min(100vh,860px);display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(img/f/01.webp) center/cover}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,27,45,.97) 0%,rgba(15,27,45,.86) 45%,rgba(15,27,45,.45) 100%)}
+.hero .w{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;width:100%;padding-top:50px;padding-bottom:50px}
+.hero h1{font-size:clamp(48px,7vw,92px);font-weight:800;margin:18px 0}
+.hero .lead{font-size:22px;color:#e4d9bf;max-width:520px;margin:0}
+.stamp{display:inline-block;border:2px solid var(--rouge);color:var(--rouge);padding:5px 12px;transform:rotate(-4deg);font-weight:600}
+.mock{width:100%;max-width:480px;justify-self:center;filter:drop-shadow(0 40px 60px rgba(0,0,0,.6));animation:flot 6s ease-in-out infinite}
 @keyframes flot{50%{transform:translateY(-12px)}}
-/* marquee */
-.mq{border-top:1px solid rgba(201,162,74,.35);border-bottom:1px solid rgba(201,162,74,.35);overflow:hidden;white-space:nowrap;padding:16px 0;background:var(--navy2)}
-.mq div{display:inline-block;animation:defile 70s linear infinite}
-.mq span{font-family:'Playfair Display',serif;font-style:italic;font-size:20px;margin:0 16px;color:#ddd1b6}
-.mq i{color:var(--rouge);font-style:normal}
-@keyframes defile{to{transform:translateX(-50%)}}
-section{padding:110px 0}
-.creme{background:var(--creme);color:var(--tinta)}
-.creme h2{color:var(--navy)}
-/* claire */
-.claire{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
-.dossier-card{background:var(--navy);color:var(--creme);padding:34px;border-left:6px solid var(--or);position:relative}
-.dossier-card .mono{color:var(--or)}
-.dossier-card p{font-family:'Playfair Display',serif;font-style:italic;font-size:26px;line-height:1.3;margin:16px 0 0}
-.dossier-card small{display:block;margin-top:18px;color:#a99d84;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em}
-blockquote{margin:28px 0;padding:18px 24px;border-left:4px solid var(--rouge);font-family:'Playfair Display',serif;font-style:italic;font-size:24px;color:var(--navy)}
-/* approchez */
-.zoom{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.pg{position:relative;max-width:460px;justify-self:center;box-shadow:0 30px 60px rgba(0,0,0,.45)}
-.pg img{display:block;width:100%}
-.dot{position:absolute;width:38px;height:38px;border-radius:50%;background:var(--rouge);color:#fff;border:2px solid #fff;font-family:'IBM Plex Mono',monospace;font-weight:600;cursor:pointer;transform:translate(-50%,-50%);box-shadow:0 0 0 0 rgba(179,38,30,.6);animation:pulse 2.2s infinite}
-.dot.on{background:var(--or);color:var(--navy);animation:none}
-@keyframes pulse{70%{box-shadow:0 0 0 14px rgba(179,38,30,0)}}
-.expl{min-height:230px}
-.expl h3{font-size:34px;margin:10px 0 14px}
-.expl p{color:#ddd1b6;font-size:19px}
-/* sommaire */
-.parties{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px}
-.partie{border-top:4px solid var(--rouge);padding-top:18px}
-.partie h3{font-size:28px;color:var(--navy);margin:6px 0 14px}
-.partie ol{margin:0;padding:0;list-style:none;counter-reset:n}
-.partie li{padding:8px 0;border-bottom:1px solid #d6c7a3;font-size:17px;display:flex;gap:12px}
-.partie li b{font-family:'IBM Plex Mono',monospace;color:var(--or);font-size:13px;padding-top:3px}
-.bonus{margin-top:34px;padding:18px 22px;background:var(--creme2);font-size:17px}
-/* feuilleter */
-.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+/* chiffres */
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(201,162,74,.35);border-bottom:1px solid rgba(201,162,74,.35);background:var(--navy2)}
+.chiffres div{padding:26px 10px;text-align:center;border-right:1px solid rgba(201,162,74,.2)}
+.chiffres b{display:block;font-family:'Playfair Display',serif;font-size:40px;color:var(--or);line-height:1}
+.chiffres span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b5a98e}
+/* mosaico de fotos reais */
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
+.tile{position:relative;overflow:hidden;background:#000}
+.tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s,opacity .3s;opacity:.88}
+.tile:hover img{transform:scale(1.06);opacity:1}
+.tile span{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(10,16,28,.92));font-family:'Playfair Display',serif;font-size:19px;color:#fff}
+.tile i{display:block;font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--or)}
+.tile.big{grid-column:span 2;grid-row:span 2}.tile.big span{font-size:28px}
+.tile.lock img{filter:blur(6px) grayscale(.6);opacity:.55}
+.tile.lock span{inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:rgba(15,27,45,.55)}
+.cta-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:34px;padding:24px 28px;background:var(--navy2);border-left:6px solid var(--rouge)}
+.cta-bar p{margin:0;font-family:'Playfair Display',serif;font-size:24px}
+/* páginas */
+.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .pages figure{margin:0}
-.pages img{width:100%;display:block;box-shadow:0 18px 40px rgba(0,0,0,.4);transition:transform .25s;cursor:zoom-in}
+.pages img{width:100%;display:block;box-shadow:0 20px 44px rgba(0,0,0,.35);transition:transform .25s;cursor:zoom-in}
 .pages img:hover{transform:translateY(-6px) rotate(-.6deg)}
-.pages figcaption{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--or);margin-top:12px}
-.lb{position:fixed;inset:0;background:rgba(5,10,18,.92);display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out}
+.pages figcaption{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--rouge);margin-top:12px}
+.lb{position:fixed;inset:0;background:rgba(5,10,18,.92);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
 .lb img{max-height:92vh;max-width:92vw}
-/* lois */
-.lois{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 50px;margin-top:40px}
-.loi{display:flex;gap:18px}
-.loi b{font-family:'Playfair Display',serif;font-size:40px;color:var(--or);line-height:1;width:54px;flex:none}
-.loi h3{font-size:22px;margin-bottom:6px}
-.loi p{margin:0;color:#c9bda1;font-size:16.5px}
+/* citação com foto */
+.quote{display:grid;grid-template-columns:1fr 1fr;min-height:420px}
+.quote .ph{background:url(img/f/16.webp) center/cover}
+.quote .tx{background:var(--navy2);padding:60px 50px;display:flex;flex-direction:column;justify-content:center}
+.quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(26px,2.8vw,36px);line-height:1.25;margin:14px 0 22px}
+/* bumps */
+.bumps{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.bump{display:flex;gap:22px;align-items:center;background:#fff;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.bump img{width:120px;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.bump h3{color:var(--navy);font-size:24px;margin:4px 0 6px}
+.bump p{margin:0;font-size:16px;color:#4d4538}
 /* faq */
-.faq{max-width:780px;margin-top:30px}
-details{border-bottom:1px solid #d6c7a3;padding:20px 0}
-summary{cursor:pointer;font-family:'Playfair Display',serif;font-size:22px;color:var(--navy);list-style:none;display:flex;justify-content:space-between}
+.faq{max-width:780px}
+details{border-bottom:1px solid #d6c7a3;padding:18px 0}
+summary{cursor:pointer;font-family:'Playfair Display',serif;font-size:21px;color:var(--navy);list-style:none;display:flex;justify-content:space-between}
 summary::after{content:'+';color:var(--rouge);font-family:'IBM Plex Mono',monospace}
 details[open] summary::after{content:'−'}
-details p{margin:12px 0 0;font-size:17.5px}
+details p{margin:10px 0 0;font-size:17px}
 /* final */
-.final{text-align:center;padding:120px 0 90px}
-.final img{width:260px;margin-bottom:20px}
-.final h2{font-size:clamp(36px,5vw,60px)}
+.final{position:relative;text-align:center;padding:120px 0 100px;overflow:hidden}
+.final-bg{position:absolute;inset:0;background:url(img/f/10.webp) center/cover;opacity:.18}
+.final .w{position:relative}
+.final img{width:250px;margin-bottom:16px}
+.final h2{font-size:clamp(36px,5vw,62px)}
 .final .prix{justify-content:center}
-footer{padding:30px 0 50px;text-align:center;color:#7d7461;font-size:13px}
+footer{padding:30px 0 90px;text-align:center;color:#7d7461;font-size:13px}
+/* barra fixa de compra */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;background:rgba(15,27,45,.96);border-top:1px solid rgba(201,162,74,.4);padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:22px;transform:translateY(110%);transition:transform .3s}
+.sticky.on{transform:none}
+.sticky b{font-family:'Playfair Display',serif;font-size:24px}
+.sticky .btn{padding:13px 24px;font-size:13px}
+.sticky small{color:#b5a98e;font-size:13px}
 @media (max-width:860px){
- .hero,.claire,.zoom{grid-template-columns:1fr}
- .hero{padding-top:40px;text-align:left}
- .mock{max-width:330px;order:-1}
- .parties,.pages,.lois{grid-template-columns:1fr}
- section{padding:80px 0}
+ .hero .w,.quote,.bumps{grid-template-columns:1fr}
+ .mock{max-width:300px;order:-1}
+ .hero-bg::after{background:linear-gradient(180deg,rgba(15,27,45,.7),rgba(15,27,45,.97) 55%)}
+ .chiffres{grid-template-columns:repeat(2,1fr)}
+ .mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+ .tile span{font-size:16px}.tile.big span{font-size:22px}
+ .pages{grid-template-columns:1fr 1fr}.pages figure:last-child{display:none}
+ .quote .ph{min-height:260px}.quote .tx{padding:40px 26px}
+ .bump img{width:90px}
+ .sticky small{display:none}
+ section{padding:70px 0}
 }
 </style>
 </head>
 <body>
 
-<div class="w">
- <header class="hero">
+<header class="hero">
+ <div class="hero-bg"></div>
+ <div class="w">
   <div>
    <div class="mono k"><span class="stamp">Classé</span> &nbsp; Sécurité Extrême · Claire Fortin</div>
    <h1>Les Forteresses <em>Invisibles</em></h1>
-   <p class="lead">Prisons, coffres-forts, bunkers sous les montagnes : <b>21 lieux parmi les mieux gardés du monde</b>, expliqués simplement. Et les rares fois où quelqu'un a trouvé la faille.</p>
-   <div class="prix"><b>27,90 €</b><span>paiement unique · PDF</span></div>
-   <a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Ouvrir les dossiers</a>
-   <div class="sous">Accès immédiat par e-mail · Garantie 15 jours</div>
+   <p class="lead">21 lieux parmi les mieux gardés du monde. <b>Et la faille que personne n'avait vue.</b></p>
+   <div class="prix"><b>27,90 €</b><span class="sous" style="margin:0">PDF · paiement unique</span></div>
+   <a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10" id="cta1">Ouvrir les dossiers →</a>
+   <div class="sous">Accès immédiat par e-mail · Garantie 7 jours</div>
   </div>
   <img class="mock" src="img/mockup.webp" alt="Couverture du e-book Les Forteresses Invisibles">
- </header>
+ </div>
+</header>
+
+<div class="chiffres">
+ <div><b>21</b><span>dossiers</span></div>
+ <div><b>73</b><span>pages</span></div>
+ <div><b>39</b><span>photos réelles</span></div>
+ <div><b>21</b><span>cartes</span></div>
 </div>
 
-<div class="mq"><div id="mq"></div></div>
-
-<section class="creme">
- <div class="w claire">
-  <div class="dossier-card">
-   <div class="mono">Note de Claire Fortin</div>
-   <p>« Aucune forteresse n'est parfaite. La vraie question, c'est toujours : où était la faille ? »</p>
-   <small>SÉCURITÉ EXTRÊME · DOSSIERS 01—21</small>
-  </div>
-  <div>
-   <div class="mono k">Pourquoi ce livre</div>
-   <h2>Ce qui ne doit ni entrer, ni sortir</h2>
-   <p>Nous passons parfois à quelques mètres de ces lieux sans le savoir : l'or de la France dort à 27 mètres sous Paris, un bunker gouvernemental s'étend sous la campagne anglaise, une montagne du Colorado cache un centre de commandement posé sur des ressorts géants.</p>
-   <p>Dans la chaîne, Claire Fortin raconte ces lieux en quelques minutes. Ce livre prend le temps : pour chacun, <b>comment fonctionne sa protection</b>, ce que presque personne ne remarque, et <b>où le système a cédé</b>.</p>
-   <blockquote>« Les évadés trouvent rarement une faille au cœur du système. Ils trouvent la zone que personne ne considérait comme sensible. »</blockquote>
-  </div>
- </div>
-</section>
-
 <section>
- <div class="w zoom">
-  <div class="pg" id="pg"><img src="img/p-alcatraz.webp" alt="Page du dossier Alcatraz"></div>
-  <div class="expl">
-   <div class="mono k or">Approchez-vous</div>
-   <h2 style="font-size:clamp(30px,3.6vw,44px)">Chaque lieu est un dossier.</h2>
-   <p style="color:#a99d84">Touchez les numéros sur la page : c'est ainsi que le livre présente chacun des 21 lieux.</p>
-   <div id="expl"><h3></h3><p></p></div>
-  </div>
+ <div class="w">
+  <div class="mono k or">Ce que vous allez ouvrir</div>
+  <h2>Des lieux réels.<br>Des failles <em>réelles.</em></h2>
+  <div class="mosaic" id="mosaic"></div>
+  <div class="cta-bar"><p>Les 21 dossiers vous attendent.</p><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Je veux le e-book · 27,90 €</a></div>
  </div>
 </section>
 
 <section class="creme">
  <div class="w">
-  <div class="mono k">Sommaire</div>
-  <h2>21 dossiers, 3 parties</h2>
-  <div class="parties" id="parties"></div>
-  <div class="bonus">Et aussi : <b>les 7 lois de la sécurité</b>, <b>la grille d'analyse de Claire</b> (7 questions pour comprendre n'importe quel lieu protégé), <b>la carte des 21 lieux</b> et un <b>glossaire</b>. 53 pages illustrées de cartes.</div>
- </div>
-</section>
-
-<section>
- <div class="w">
-  <div class="mono k or">Feuilletez</div>
-  <h2>Quelques pages</h2>
+  <div class="mono k">À l'intérieur</div>
+  <h2>Photos, cartes,<br>et la faille de chaque lieu.</h2>
   <div class="pages">
-   <figure><img src="img/p-sommaire.webp" alt=""><figcaption>Le sommaire</figcaption></figure>
-   <figure><img src="img/p-alcatraz2.webp" alt=""><figcaption>Alcatraz : le système</figcaption></figure>
-   <figure><img src="img/p-svalbard.webp" alt=""><figcaption>Svalbard : l'arche des semences</figcaption></figure>
-   <figure><img src="img/p-maginot.webp" alt=""><figcaption>La ligne Maginot</figcaption></figure>
-   <figure><img src="img/p-berlin.webp" alt=""><figcaption>Le Mur de Berlin</figcaption></figure>
-   <figure><img src="img/p-grille.webp" alt=""><figcaption>Bonus : la grille d'analyse</figcaption></figure>
+   <figure><img src="img/p-dossier.webp" alt="Ouverture d'un dossier"><figcaption>01 · La photo et la fiche</figcaption></figure>
+   <figure><img src="img/p-texte.webp" alt="Le système et la faille"><figcaption>02 · Le système, la faille</figcaption></figure>
+   <figure><img src="img/p-pieces.webp" alt="Pièces à conviction"><figcaption>03 · Pièces à conviction</figcaption></figure>
   </div>
  </div>
 </section>
 
-<section style="background:var(--navy2)">
+<div class="quote">
+ <div class="ph" role="img" aria-label="Le Mur de Berlin"></div>
+ <div class="tx">
+  <div class="mono k or">Claire Fortin · Sécurité Extrême</div>
+  <p>« Aucune forteresse n'est parfaite. La vraie question, c'est toujours : où était la faille ? »</p>
+  <div><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Lire les 21 dossiers</a></div>
+ </div>
+</div>
+
+<section class="creme" style="background:var(--creme2)">
  <div class="w">
-  <div class="mono k">La méthode</div>
-  <h2>Les 7 lois de la sécurité</h2>
-  <div class="lois" id="lois"></div>
+  <div class="mono k">En option au paiement</div>
+  <h2>Deux carnets à 9,90 €</h2>
+  <div class="bumps">
+   <div class="bump"><img src="img/bump1.webp" alt="Les Casses Impossibles"><div><div class="mono k">Carnet 1</div><h3>Les Casses Impossibles</h3><p>Le Louvre, Nice, Hatton Garden… 8 coffres vidés.</p></div></div>
+   <div class="bump"><img src="img/bump2.webp" alt="Les Lieux Interdits"><div><div class="mono k">Carnet 2</div><h3>Les Lieux Interdits</h3><p>Zone 51, North Sentinel, Lascaux… 8 lieux fermés.</p></div></div>
+  </div>
+  <p class="sous" style="color:#6d6350">À cocher sur la page de paiement, en un clic.</p>
  </div>
 </section>
 
 <section class="creme">
  <div class="w">
   <div class="mono k">Questions</div>
-  <h2>Avant d'ouvrir les dossiers</h2>
+  <h2>En bref</h2>
   <div class="faq">
-   <details><summary>Comment je reçois le e-book ?</summary><p>Le paiement est traité par Hotmart. Dès qu'il est confirmé, vous recevez par e-mail l'accès au PDF, à télécharger tout de suite.</p></details>
-   <details><summary>Faut-il s'y connaître en sécurité ?</summary><p>Non. Le livre est écrit pour tout le monde. Quand un terme technique apparaît, il est expliqué dans la même phrase, et un glossaire vous attend à la fin.</p></details>
-   <details><summary>Je regarde déjà la chaîne. C'est la même chose ?</summary><p>Non. Le livre réunit 21 lieux avec plus de détails : la fiche de chaque site, les chiffres clés, l'analyse de la faille et ce que presque personne ne remarque.</p></details>
-   <details><summary>Les informations sont-elles fiables ?</summary><p>Elles viennent de sources publiques : institutions, archives, musées et presse. Quand une histoire relève de la légende ou de l'hypothèse, le texte le dit clairement. Les sources sont listées à la fin.</p></details>
-   <details><summary>Je peux le lire sur mon téléphone ?</summary><p>Oui. C'est un PDF qui s'ouvre sur téléphone, tablette, ordinateur ou liseuse, et qui s'imprime aussi.</p></details>
-   <details><summary>Et s'il ne me plaît pas ?</summary><p>Vous avez 15 jours de garantie. Il suffit de demander le remboursement directement sur Hotmart.</p></details>
+   <details><summary>Comment je le reçois ?</summary><p>Par e-mail, dès le paiement confirmé par Hotmart. Un PDF à lire sur téléphone, tablette ou ordinateur.</p></details>
+   <details><summary>Faut-il s'y connaître ?</summary><p>Non. Tout est expliqué simplement, avec un glossaire à la fin.</p></details>
+   <details><summary>C'est fiable ?</summary><p>Sources publiques citées à la fin. Légendes et hypothèses sont signalées comme telles.</p></details>
+   <details><summary>Et s'il ne me plaît pas ?</summary><p>Garantie 7 jours : remboursement demandé directement sur Hotmart.</p></details>
   </div>
  </div>
 </section>
 
-<div class="w final">
- <img src="img/mockup.webp" alt="">
- <div class="mono k">Dossiers 01—21</div>
- <h2>Aucune forteresse<br>n'est <em>parfaite.</em></h2>
- <p style="color:#ddd1b6;max-width:620px;margin:0 auto">21 lieux, 53 pages, et la question qui change votre regard : où était la faille ?</p>
- <div class="prix"><b>27,90 €</b><span>paiement unique</span></div>
- <a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Je veux le e-book</a>
- <div class="sous">Garantie 15 jours · paiement sécurisé par Hotmart</div>
+<div class="final">
+ <div class="final-bg"></div>
+ <div class="w">
+  <img src="img/mockup.webp" alt="">
+  <h2>Aucune forteresse<br>n'est <em>parfaite.</em></h2>
+  <div class="prix"><b>27,90 €</b></div>
+  <a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Ouvrir les dossiers →</a>
+  <div class="sous">Garantie 7 jours · paiement sécurisé Hotmart</div>
+ </div>
 </div>
-<footer>© Sécurité Extrême · Claire Fortin est la narratrice de la chaîne. Les marques et lieux cités appartiennent à leurs propriétaires.</footer>
+<footer>© Sécurité Extrême · Claire Fortin est la narratrice de la chaîne. Photos : Wikimedia Commons, licences libres (crédits dans le livre).</footer>
 
+<div class="sticky" id="sticky"><small>Les Forteresses Invisibles · 21 dossiers</small><b>27,90 €</b><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Acheter</a></div>
 <div class="lb" id="lb"><img alt=""></div>
 <script>
-const D=[["Alcatraz","États-Unis"],["ADX Florence","États-Unis"],["Le Dauphin Noir","Russie"],["Halden","Norvège"],["L'Île du Diable","Guyane"],["La Tour de Londres","Royaume-Uni"],["Le Château d'If","France"],["Cheyenne Mountain","États-Unis"],["La Réserve mondiale de semences","Svalbard"],["Fort Knox","États-Unis"],["La Réserve fédérale de New York","États-Unis"],["La Souterraine","Paris"],["Burlington","Royaume-Uni"],["La Ligne Maginot","France"],["La Grande Évasion","Pologne"],["Le Mur de Berlin","Allemagne"],["La Zone démilitarisée coréenne","Corée"],["L'évasion de Michel Vaujour","Paris"],["L'évasion de Rédoine Faïd","Seine-et-Marne"],["Le tunnel d'El Chapo","Mexique"],["Le casse du siècle à Anvers","Belgique"]];
-const P=[["I","Les Prisons Imprenables",0],["II","Coffres et Bunkers",7],["III","Les Failles",14]];
-const L=[["Une forteresse vaut ce que vaut son maillon le plus faible.","Les murs les plus épais ne servent à rien si la porte de service reste ouverte."],["La routine est l'alliée de l'évadé.","Presque toutes les grandes évasions ont exploité un geste répété chaque jour."],["La géographie est le premier gardien.","Une île, une montagne ou un sous-sol rocheux font souvent plus que des barbelés."],["Le secret protège autant que l'acier.","Ce qu'on ne connaît pas, on ne peut pas l'attaquer."],["Personne ne doit tout savoir.","Codes partagés, clés multiples : le principe des « deux personnes » est partout."],["Le facteur humain finit toujours par compter.","Une complicité, une fatigue, une confiance excessive."],["La sécurité coûte, et le coût finit par décider.","Alcatraz n'a pas fermé vaincue, mais devenue trop chère."]];
-const t=D.map((d,i)=>`<span><i>${String(i+1).padStart(2,'0')}</i> ${d[0]}</span>`).join('<i>✕</i>');
-document.getElementById('mq').innerHTML=t+'<i>✕</i>'+t;
-document.getElementById('parties').innerHTML=P.map(([r,n,s])=>`<div class="partie"><div class="mono k">Partie ${r}</div><h3>${n}</h3><ol>${D.slice(s,s+7).map((d,k)=>`<li><b>${String(s+k+1).padStart(2,'0')}</b>${d[0]}</li>`).join('')}</ol></div>`).join('');
-document.getElementById('lois').innerHTML=L.map((l,i)=>`<div class="loi"><b>${['I','II','III','IV','V','VI','VII'][i]}</b><div><h3>${l[0]}</h3><p>${l[1]}</p></div></div>`).join('');
-const H=[[50,13,"Le titre du dossier","Chaque lieu a son numéro, sa partie et son nom : 21 dossiers à ouvrir dans l'ordre ou au hasard."],[50,23,"La fiche d'identité","Le lieu exact, les coordonnées GPS et la période. On sait toujours de quoi on parle."],[50,42,"La carte","Une vraie carte, centrée sur le lieu. Pour comprendre en un regard pourquoi la géographie compte."],[50,64,"Les chiffres clés","Trois nombres qui résument le lieu : distance, poids, durée, nombre de tentatives…"],[50,82,"L'accroche","Une phrase pour entrer dans l'histoire. Puis, page suivante : le système, la faille et le détail que personne ne remarque."]];
-const pg=document.getElementById('pg'),ex=document.getElementById('expl');
-H.forEach((h,i)=>{const b=document.createElement('button');b.className='dot';b.textContent=i+1;b.style.left=h[0]+'%';b.style.top=h[1]+'%';b.style.left=(i%2?78:22)+'%';b.onclick=()=>show(i);pg.appendChild(b)});
-function show(i){pg.querySelectorAll('.dot').forEach((b,k)=>b.classList.toggle('on',k===i));ex.innerHTML=`<h3>${H[i][2]}</h3><p>${H[i][3]}</p>`}
-show(0);
+const D=[["Alcatraz","États-Unis"],["ADX Florence","États-Unis"],["Le Dauphin Noir","Russie"],["Halden","Norvège"],["L'Île du Diable","Guyane"],["La Tour de Londres","Royaume-Uni"],["Le Château d'If","France"],["Cheyenne Mountain","États-Unis"],["La Réserve de semences","Svalbard"],["Fort Knox","États-Unis"],["La Fed de New York","États-Unis"],["La Souterraine","Paris"],["Burlington","Royaume-Uni"],["La Ligne Maginot","France"],["La Grande Évasion","Pologne"],["Le Mur de Berlin","Allemagne"],["La DMZ coréenne","Corée"],["L'évasion de Vaujour","Paris"],["L'évasion de Faïd","France"],["Le tunnel d'El Chapo","Mexique"],["Le casse d'Anvers","Belgique"]];
+const show=[0,9,15,7,6,13,16,5];  // dossiês no mosaico (o 1º é grande)
+let h=show.map((i,k)=>`<div class="tile${k===0?' big':''}"><img src="img/f/${String(i+1).padStart(2,'0')}.webp" alt="${D[i][0]}"><span><i>${String(i+1).padStart(2,'0')} · ${D[i][1]}</i>${D[i][0]}</span></div>`).join('');
+h+=`<div class="tile lock"><img src="img/f/21.webp" alt=""><span><i>Classé</i>+ 13 dossiers</span></div>`;
+document.getElementById('mosaic').innerHTML=h;
 const lb=document.getElementById('lb');
 document.querySelectorAll('.pages img').forEach(im=>im.onclick=()=>{lb.querySelector('img').src=im.src;lb.style.display='flex'});
 lb.onclick=()=>lb.style.display='none';
+const st=document.getElementById('sticky'),c1=document.getElementById('cta1');
+addEventListener('scroll',()=>st.classList.toggle('on',c1.getBoundingClientRect().bottom<0),{passive:true});
 </script>
 </body>
 </html>
