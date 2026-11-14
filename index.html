@@ -4,128 +4,139 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Les Forteresses Invisibles · Claire Fortin</title>
-<meta name="description" content="21 lieux parmi les mieux gardés du monde, et les rares fois où quelqu'un a trouvé la faille. Le e-book de la chaîne Sécurité Extrême.">
+<meta name="description" content="21 lieux parmi les mieux gardés du monde, et les rares fois où quelqu'un a trouvé la faille. Le e-book de la chaîne Claire Fortin.">
 <meta property="og:title" content="Les Forteresses Invisibles">
 <meta property="og:description" content="Prisons, coffres-forts, bunkers, évasions : 21 dossiers en photos, par Claire Fortin.">
 <meta property="og:image" content="img/mockup.webp">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230f1b2d'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%23c9a24a' font-family='serif'>F</text></svg>">
+<link rel="icon" href="img/claire-avatar.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@500;700;800&display=swap">
 <style>
-:root{--navy:#0f1b2d;--navy2:#16243b;--creme:#f3ead7;--creme2:#e9dcc0;--or:#c9a24a;--rouge:#b3261e;--tinta:#1d1a16}
+:root{--navy:#0e1a2b;--navy2:#15263d;--jaune:#f2b705;--rouge:#e10600;--blanc:#fff;--noir:#111}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;overflow-x:clip}
-body{margin:0;overflow-x:clip;background:var(--navy);color:var(--creme);font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.55}
+body{margin:0;overflow-x:clip;background:var(--navy);color:var(--blanc);font-family:'Poppins',system-ui,sans-serif;font-size:18px;line-height:1.55;font-weight:500}
 a{color:inherit}
 .w{max-width:1160px;margin:0 auto;padding:0 24px}
-.mono{font-family:'IBM Plex Mono',monospace;letter-spacing:.22em;text-transform:uppercase;font-size:12px;line-height:1.8}
-.k{color:var(--rouge);font-weight:600}.k.or{color:var(--or)}
-h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.05;margin:0}
-h2{font-size:clamp(32px,4.4vw,54px);margin:10px 0 26px}
-em{color:var(--or);font-style:italic;font-weight:500}
-.btn{display:inline-block;background:var(--rouge);color:#fff;text-decoration:none;font-family:'IBM Plex Mono',monospace;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:15px;padding:19px 34px;border-radius:2px;box-shadow:0 10px 30px rgba(179,38,30,.4);transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.sous{color:#b5a98e;font-size:14px;margin-top:12px}
-.prix{display:flex;align-items:baseline;gap:12px;margin:22px 0 14px}
-.prix b{font-family:'Playfair Display',serif;font-size:48px}
-section{padding:90px 0}
-.creme{background:var(--creme);color:var(--tinta)}.creme h2{color:var(--navy)}
-/* hero com foto real */
-.hero{position:relative;min-height:min(100vh,860px);display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url(img/f/01.webp) center/cover}
-.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,27,45,.97) 0%,rgba(15,27,45,.86) 45%,rgba(15,27,45,.45) 100%)}
-.hero .w{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;width:100%;padding-top:50px;padding-bottom:50px}
-.hero h1{font-size:clamp(48px,7vw,92px);font-weight:800;margin:18px 0}
-.hero .lead{font-size:22px;color:#e4d9bf;max-width:520px;margin:0}
-.stamp{display:inline-block;border:2px solid var(--rouge);color:var(--rouge);padding:5px 12px;transform:rotate(-4deg);font-weight:600}
-.mock{width:100%;max-width:480px;justify-self:center;filter:drop-shadow(0 40px 60px rgba(0,0,0,.6));animation:flot 6s ease-in-out infinite}
+h1,h2,h3{font-family:'Archivo Black',sans-serif;line-height:1;margin:0;text-transform:uppercase;letter-spacing:-.01em}
+h2{font-size:clamp(32px,4.6vw,58px);margin:14px 0 30px}
+.r{color:var(--rouge)}
+.tag{display:inline-block;background:var(--jaune);color:var(--noir);font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border:3px solid var(--noir);border-radius:40px;box-shadow:3px 3px 0 var(--noir)}
+.btn{display:inline-block;background:var(--rouge);color:#fff;text-decoration:none;font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:18px;padding:18px 32px;border:4px solid var(--noir);border-radius:14px;box-shadow:6px 6px 0 var(--noir);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--noir)}
+.sous{color:#b9c4d8;font-size:14px;margin-top:14px}
+.prix{display:flex;align-items:center;gap:14px;margin:24px 0 18px}
+.prix b{white-space:nowrap;font-family:'Archivo Black',sans-serif;font-size:46px;color:var(--jaune);text-shadow:3px 3px 0 var(--noir)}
+section{padding:90px 0;position:relative}
+.blanc{background:#fff;color:var(--noir)}
+.jaune{background:var(--jaune);color:var(--noir)}
+.icons{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260' fill='none' stroke='%23263a5a' stroke-width='3'%3E%3Cpath d='M30 120v-50h40v50M25 70h50l-8-14H33zM40 120l20-30M60 120L40 90'/%3E%3Ccircle cx='180' cy='60' r='32'/%3E%3Ccircle cx='180' cy='60' r='12'/%3E%3Cpath d='M180 28v20M180 72v20M148 60h20M192 60h20'/%3E%3Crect x='150' y='170' width='50' height='40' rx='6'/%3E%3Cpath d='M160 170v-14a15 15 0 0130 0v14M175 185v10'/%3E%3Cpath d='M20 220q15-14 30 0t30 0 30 0'/%3E%3C/svg%3E")}
+.hero{min-height:min(100vh,860px);display:flex;align-items:center;overflow:hidden;padding:60px 0 40px}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:20px;align-items:center;width:100%}
+.hero h1{font-size:clamp(44px,6.6vw,88px);margin:20px 0}
+.hero h1 span{display:block}
+.hero .lead{font-size:21px;color:#dbe3f0;max-width:540px;margin:0}
+.hero .lead b{color:var(--jaune)}
+.stage{position:relative;justify-self:center;width:100%;max-width:540px}
+.mock{width:72%;display:block;margin-left:4%;filter:drop-shadow(0 30px 50px rgba(0,0,0,.6));animation:flot 6s ease-in-out infinite}
+.stage .cl{position:absolute;right:-12%;bottom:-8%;width:52%;transform:scaleX(-1)}
+.bulle{position:absolute;right:-10%;top:4%;background:#fff;color:var(--noir);font-weight:800;font-size:15px;padding:10px 16px;border:3px solid var(--noir);border-radius:18px;box-shadow:4px 4px 0 var(--noir);max-width:210px;line-height:1.25}
+.bulle::after{content:'';position:absolute;left:30px;bottom:-16px;border:8px solid transparent;border-top-color:var(--noir)}
 @keyframes flot{50%{transform:translateY(-12px)}}
-/* chiffres */
-.chiffres{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(201,162,74,.35);border-bottom:1px solid rgba(201,162,74,.35);background:var(--navy2)}
-.chiffres div{padding:26px 10px;text-align:center;border-right:1px solid rgba(201,162,74,.2)}
-.chiffres b{display:block;font-family:'Playfair Display',serif;font-size:40px;color:var(--or);line-height:1}
-.chiffres span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#b5a98e}
-/* mosaico de fotos reais */
-.mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
-.tile{position:relative;overflow:hidden;background:#000}
-.tile img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s,opacity .3s;opacity:.88}
-.tile:hover img{transform:scale(1.06);opacity:1}
-.tile span{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,rgba(10,16,28,.92));font-family:'Playfair Display',serif;font-size:19px;color:#fff}
-.tile i{display:block;font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:var(--or)}
-.tile.big{grid-column:span 2;grid-row:span 2}.tile.big span{font-size:28px}
-.tile.lock img{filter:blur(6px) grayscale(.6);opacity:.55}
-.tile.lock span{inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:rgba(15,27,45,.55)}
-.cta-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:34px;padding:24px 28px;background:var(--navy2);border-left:6px solid var(--rouge)}
-.cta-bar p{margin:0;font-family:'Playfair Display',serif;font-size:24px}
-/* páginas */
-.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.chiffres{display:grid;grid-template-columns:repeat(4,1fr);background:var(--jaune);color:var(--noir);border-top:4px solid var(--noir);border-bottom:4px solid var(--noir)}
+.chiffres div{padding:22px 10px;text-align:center;border-right:3px solid var(--noir)}
+.chiffres div:last-child{border-right:0}
+.chiffres b{display:block;font-family:'Archivo Black',sans-serif;font-size:42px;line-height:1}
+.chiffres span{font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+.ronds{display:grid;grid-template-columns:repeat(4,1fr);gap:34px 22px}
+.rond{text-align:center}
+.rond .c{aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid var(--noir);box-shadow:5px 5px 0 var(--noir);background:#000}
+.rond img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.rond:hover img{transform:scale(1.08)}
+.rond b{display:block;font-family:'Archivo Black',sans-serif;font-size:19px;margin-top:12px;line-height:1.1;text-transform:uppercase}
+.rond i{font-style:normal;font-size:13px;color:#666;font-weight:700}
+.rond.lock .c{background:var(--rouge);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff}
+.rond.lock .c strong{font-family:'Archivo Black',sans-serif;font-size:44px;line-height:1}
+.rond.lock .c span{font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase}
+.cta-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:50px;padding:22px 26px;background:var(--navy);color:#fff;border:4px solid var(--noir);border-radius:18px;box-shadow:6px 6px 0 var(--noir)}
+.cta-bar p{margin:0;font-family:'Archivo Black',sans-serif;font-size:24px;text-transform:uppercase;flex:1}
+.cta-bar .mini{width:90px;margin:-40px 0 -22px}
+.pages{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
 .pages figure{margin:0}
-.pages img{width:100%;display:block;box-shadow:0 20px 44px rgba(0,0,0,.35);transition:transform .25s;cursor:zoom-in}
-.pages img:hover{transform:translateY(-6px) rotate(-.6deg)}
-.pages figcaption{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--rouge);margin-top:12px}
-.lb{position:fixed;inset:0;background:rgba(5,10,18,.92);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
+.pages img{width:100%;display:block;border:4px solid var(--noir);border-radius:8px;box-shadow:7px 7px 0 var(--noir);transition:transform .2s;cursor:zoom-in;background:#fff}
+.pages img:hover{transform:rotate(-1deg) translateY(-4px)}
+.pages figcaption{font-weight:800;font-size:15px;text-transform:uppercase;margin-top:14px}
+.pages figcaption span{background:var(--noir);color:var(--jaune);padding:2px 8px;border-radius:6px;margin-right:6px}
+.hint{font-weight:700;font-size:14px;margin-top:22px}
+.lb{position:fixed;inset:0;background:rgba(5,10,18,.94);display:none;align-items:center;justify-content:center;z-index:20;cursor:zoom-out}
 .lb img{max-height:92vh;max-width:92vw}
-/* citação com foto */
-.quote{display:grid;grid-template-columns:1fr 1fr;min-height:420px}
-.quote .ph{background:url(img/f/16.webp) center/cover}
-.quote .tx{background:var(--navy2);padding:60px 50px;display:flex;flex-direction:column;justify-content:center}
-.quote p{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(26px,2.8vw,36px);line-height:1.25;margin:14px 0 22px}
-/* bumps */
+.qui{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:center}
+.qui img{width:100%;max-width:380px;justify-self:center}
+.qui blockquote{margin:16px 0 22px;font-family:'Archivo Black',sans-serif;font-size:clamp(26px,3vw,38px);line-height:1.15;text-transform:uppercase}
+.qui blockquote em{font-style:normal;color:var(--jaune)}
+.qui p{margin:0 0 26px;color:#dbe3f0}
 .bumps{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
-.bump{display:flex;gap:22px;align-items:center;background:#fff;padding:22px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.bump img{width:120px;box-shadow:0 10px 24px rgba(0,0,0,.3)}
-.bump h3{color:var(--navy);font-size:24px;margin:4px 0 6px}
-.bump p{margin:0;font-size:16px;color:#4d4538}
-/* faq */
-.faq{max-width:780px}
-details{border-bottom:1px solid #d6c7a3;padding:18px 0}
-summary{cursor:pointer;font-family:'Playfair Display',serif;font-size:21px;color:var(--navy);list-style:none;display:flex;justify-content:space-between}
-summary::after{content:'+';color:var(--rouge);font-family:'IBM Plex Mono',monospace}
+.bump{display:flex;gap:22px;align-items:center;background:#fff;padding:22px;border:4px solid var(--noir);border-radius:16px;box-shadow:6px 6px 0 var(--noir)}
+.bump img{width:110px;border:3px solid var(--noir)}
+.bump h3{font-size:22px;margin:10px 0 6px}
+.bump p{margin:0;font-size:15px;color:#333}
+.faq-w{display:grid;grid-template-columns:1fr .45fr;gap:30px;align-items:end}
+.faq-w>img{width:100%;max-width:260px}
+details{background:#fff;border:3px solid var(--noir);border-radius:12px;padding:16px 20px;margin-bottom:14px;box-shadow:4px 4px 0 var(--noir)}
+summary{cursor:pointer;font-weight:800;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--rouge);font-family:'Archivo Black',sans-serif}
 details[open] summary::after{content:'−'}
-details p{margin:10px 0 0;font-size:17px}
-/* final */
-.final{position:relative;text-align:center;padding:120px 0 100px;overflow:hidden}
-.final-bg{position:absolute;inset:0;background:url(img/f/10.webp) center/cover;opacity:.18}
-.final .w{position:relative}
-.final img{width:250px;margin-bottom:16px}
-.final h2{font-size:clamp(36px,5vw,62px)}
+details p{margin:10px 0 0;font-size:16px}
+.final{text-align:center;padding:110px 0 100px;overflow:hidden}
+.final .duo{display:flex;align-items:flex-end;justify-content:center;margin-bottom:10px}
+.final .duo .m{width:220px}
+.final .duo .c2{width:200px;margin-left:-30px}
+.final h2{font-size:clamp(34px,5vw,62px)}
 .final .prix{justify-content:center}
-footer{padding:30px 0 90px;text-align:center;color:#7d7461;font-size:13px}
-/* barra fixa de compra */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;background:rgba(15,27,45,.96);border-top:1px solid rgba(201,162,74,.4);padding:12px 20px;display:flex;align-items:center;justify-content:center;gap:22px;transform:translateY(110%);transition:transform .3s}
+footer{padding:30px 20px 100px;text-align:center;color:#8796b0;font-size:13px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--navy);border-top:4px solid var(--jaune);padding:10px 20px;display:flex;align-items:center;justify-content:center;gap:20px;transform:translateY(110%);transition:transform .3s}
 .sticky.on{transform:none}
-.sticky b{font-family:'Playfair Display',serif;font-size:24px}
-.sticky .btn{padding:13px 24px;font-size:13px}
-.sticky small{color:#b5a98e;font-size:13px}
+.sticky .av{width:46px;height:46px;border-radius:50%;border:3px solid var(--jaune)}
+.sticky b{font-family:'Archivo Black',sans-serif;font-size:22px;color:var(--jaune)}
+.sticky .btn{padding:11px 22px;font-size:14px;box-shadow:4px 4px 0 var(--noir)}
+.sticky small{color:#b9c4d8;font-size:14px;font-weight:700}
 @media (max-width:860px){
- .hero .w,.quote,.bumps{grid-template-columns:1fr}
- .mock{max-width:300px;order:-1}
- .hero-bg::after{background:linear-gradient(180deg,rgba(15,27,45,.7),rgba(15,27,45,.97) 55%)}
+ .hero .w,.qui,.bumps,.faq-w{grid-template-columns:1fr}
+ .stage{max-width:330px;order:-1;margin:10px auto 20px}
+ .bulle{font-size:13px;right:-4%;max-width:170px}
+ .stage .cl{right:-6%}
  .chiffres{grid-template-columns:repeat(2,1fr)}
- .mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
- .tile span{font-size:16px}.tile.big span{font-size:22px}
+ .chiffres div:nth-child(2){border-right:0}.chiffres div:nth-child(-n+2){border-bottom:3px solid var(--noir)}
+ .ronds{grid-template-columns:repeat(2,1fr);gap:26px 18px}
+ .rond b{font-size:16px}
  .pages{grid-template-columns:1fr 1fr}.pages figure:last-child{display:none}
- .quote .ph{min-height:260px}.quote .tx{padding:40px 26px}
- .bump img{width:90px}
- .sticky small{display:none}
+ .qui img{max-width:240px}
+ .faq-w>img{display:none}
+ .cta-bar .mini{display:none}
+ .final .duo .m{width:160px}.final .duo .c2{width:140px}
+ .sticky small,.sticky .av{display:none}
  section{padding:70px 0}
 }
 </style>
 </head>
 <body>
 
-<header class="hero">
- <div class="hero-bg"></div>
+<header class="hero icons">
  <div class="w">
   <div>
-   <div class="mono k"><span class="stamp">Classé</span> &nbsp; Sécurité Extrême · Claire Fortin</div>
-   <h1>Les Forteresses <em>Invisibles</em></h1>
+   <span class="tag">Le e-book de Claire Fortin</span>
+   <h1><span>Les forteresses</span><span class="r">invisibles</span></h1>
    <p class="lead">21 lieux parmi les mieux gardés du monde. <b>Et la faille que personne n'avait vue.</b></p>
    <div class="prix"><b>27,90 €</b><span class="sous" style="margin:0">PDF · paiement unique</span></div>
    <a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10" id="cta1">Ouvrir les dossiers →</a>
    <div class="sous">Accès immédiat par e-mail · Garantie 7 jours</div>
   </div>
-  <img class="mock" src="img/mockup.webp" alt="Couverture du e-book Les Forteresses Invisibles">
+  <div class="stage">
+   <img class="mock" src="img/mockup.webp" alt="Couverture du e-book Les Forteresses Invisibles">
+   <img class="cl" src="img/claire-pointe.webp" alt="Claire Fortin">
+   <div class="bulle">J'ai ouvert 21 dossiers. Voici les failles.</div>
+  </div>
  </div>
 </header>
 
@@ -136,81 +147,85 @@ footer{padding:30px 0 90px;text-align:center;color:#7d7461;font-size:13px}
  <div><b>21</b><span>cartes</span></div>
 </div>
 
-<section>
+<section class="blanc">
  <div class="w">
-  <div class="mono k or">Ce que vous allez ouvrir</div>
-  <h2>Des lieux réels.<br>Des failles <em>réelles.</em></h2>
-  <div class="mosaic" id="mosaic"></div>
-  <div class="cta-bar"><p>Les 21 dossiers vous attendent.</p><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Je veux le e-book · 27,90 €</a></div>
+  <span class="tag">Ce que vous allez ouvrir</span>
+  <h2>Des lieux <span class="r">réels.</span><br>Des failles <span class="r">réelles.</span></h2>
+  <div class="ronds" id="ronds"></div>
+  <div class="cta-bar"><img class="mini" src="img/claire-chuchote.webp" alt=""><p>Les 21 dossiers vous attendent.</p><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Je veux le e-book · 27,90 €</a></div>
  </div>
 </section>
 
-<section class="creme">
+<section class="jaune">
  <div class="w">
-  <div class="mono k">À l'intérieur</div>
+  <span class="tag" style="background:#fff">À l'intérieur</span>
   <h2>Photos, cartes,<br>et la faille de chaque lieu.</h2>
   <div class="pages">
-   <figure><img src="img/p-dossier.webp" alt="Ouverture d'un dossier"><figcaption>01 · La photo et la fiche</figcaption></figure>
-   <figure><img src="img/p-texte.webp" alt="Le système et la faille"><figcaption>02 · Le système, la faille</figcaption></figure>
-   <figure><img src="img/p-pieces.webp" alt="Pièces à conviction"><figcaption>03 · Pièces à conviction</figcaption></figure>
+   <figure><img src="img/p-dossier.webp" alt="Ouverture d'un dossier"><figcaption><span>01</span>La photo et la fiche</figcaption></figure>
+   <figure><img src="img/p-texte.webp" alt="Le système et la faille"><figcaption><span>02</span>Le système, la faille</figcaption></figure>
+   <figure><img src="img/p-pieces.webp" alt="Pièces à conviction"><figcaption><span>03</span>Pièces à conviction</figcaption></figure>
+  </div>
+  <p class="hint">👆 Touchez une page pour l'agrandir.</p>
+ </div>
+</section>
+
+<section class="icons">
+ <div class="w qui">
+  <img src="img/claire-loupe.webp" alt="Claire Fortin avec une loupe">
+  <div>
+   <span class="tag">Qui raconte</span>
+   <blockquote>« Aucune forteresse n'est parfaite. La vraie question, c'est : <em>où était la faille ?</em> »</blockquote>
+   <p>Claire Fortin est la narratrice de la chaîne. Dans ce livre, elle reprend le principe des vidéos : un lieu, son système, et le détail qui l'a fait tomber.</p>
+   <a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Lire les 21 dossiers</a>
   </div>
  </div>
 </section>
 
-<div class="quote">
- <div class="ph" role="img" aria-label="Le Mur de Berlin"></div>
- <div class="tx">
-  <div class="mono k or">Claire Fortin · Sécurité Extrême</div>
-  <p>« Aucune forteresse n'est parfaite. La vraie question, c'est toujours : où était la faille ? »</p>
-  <div><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Lire les 21 dossiers</a></div>
- </div>
-</div>
-
-<section class="creme" style="background:var(--creme2)">
+<section class="blanc">
  <div class="w">
-  <div class="mono k">En option au paiement</div>
-  <h2>Deux carnets à 9,90 €</h2>
+  <span class="tag">En option au paiement</span>
+  <h2>Deux carnets à <span class="r">9,90 €</span></h2>
   <div class="bumps">
-   <div class="bump"><img src="img/bump1.webp" alt="Les Casses Impossibles"><div><div class="mono k">Carnet 1</div><h3>Les Casses Impossibles</h3><p>Le Louvre, Nice, Hatton Garden… 8 coffres vidés.</p></div></div>
-   <div class="bump"><img src="img/bump2.webp" alt="Les Lieux Interdits"><div><div class="mono k">Carnet 2</div><h3>Les Lieux Interdits</h3><p>Zone 51, North Sentinel, Lascaux… 8 lieux fermés.</p></div></div>
+   <div class="bump"><img src="img/bump1.webp" alt="Les Casses Impossibles"><div><span class="tag">Carnet 1</span><h3>Les Casses Impossibles</h3><p>Le Louvre, Nice, Hatton Garden… 8 coffres vidés.</p></div></div>
+   <div class="bump"><img src="img/bump2.webp" alt="Les Lieux Interdits"><div><span class="tag">Carnet 2</span><h3>Les Lieux Interdits</h3><p>Zone 51, North Sentinel, Lascaux… 8 lieux fermés.</p></div></div>
   </div>
-  <p class="sous" style="color:#6d6350">À cocher sur la page de paiement, en un clic.</p>
+  <p class="sous" style="color:#555">À cocher sur la page de paiement, en un clic.</p>
  </div>
 </section>
 
-<section class="creme">
- <div class="w">
-  <div class="mono k">Questions</div>
-  <h2>En bref</h2>
-  <div class="faq">
+<section class="jaune">
+ <div class="w faq-w">
+  <div>
+   <span class="tag" style="background:#fff">Questions</span>
+   <h2>En bref</h2>
    <details><summary>Comment je le reçois ?</summary><p>Par e-mail, dès le paiement confirmé par Hotmart. Un PDF à lire sur téléphone, tablette ou ordinateur.</p></details>
    <details><summary>Faut-il s'y connaître ?</summary><p>Non. Tout est expliqué simplement, avec un glossaire à la fin.</p></details>
    <details><summary>C'est fiable ?</summary><p>Sources publiques citées à la fin. Légendes et hypothèses sont signalées comme telles.</p></details>
    <details><summary>Et s'il ne me plaît pas ?</summary><p>Garantie 7 jours : remboursement demandé directement sur Hotmart.</p></details>
   </div>
+  <img src="img/claire-sceptique.webp" alt="">
  </div>
 </section>
 
-<div class="final">
- <div class="final-bg"></div>
+<div class="final icons">
  <div class="w">
-  <img src="img/mockup.webp" alt="">
-  <h2>Aucune forteresse<br>n'est <em>parfaite.</em></h2>
+  <div class="duo"><img class="m" src="img/mockup.webp" alt=""><img class="c2" src="img/claire-salut.webp" alt="Claire Fortin"></div>
+  <h2>Aucune forteresse<br>n'est <span class="r">parfaite.</span></h2>
   <div class="prix"><b>27,90 €</b></div>
   <a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Ouvrir les dossiers →</a>
   <div class="sous">Garantie 7 jours · paiement sécurisé Hotmart</div>
  </div>
 </div>
-<footer>© Sécurité Extrême · Claire Fortin est la narratrice de la chaîne. Photos : Wikimedia Commons, licences libres (crédits dans le livre).</footer>
+<footer>© Claire Fortin · Claire Fortin est un personnage, narratrice de la chaîne. Photos : Wikimedia Commons, licences libres (crédits dans le livre).</footer>
 
-<div class="sticky" id="sticky"><small>Les Forteresses Invisibles · 21 dossiers</small><b>27,90 €</b><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Acheter</a></div>
+<div class="sticky" id="sticky"><img class="av" src="img/claire-avatar.webp" alt=""><small>Les Forteresses Invisibles · 21 dossiers</small><b>27,90 €</b><a class="btn" href="https://pay.hotmart.com/Q108377288Y?checkoutMode=10">Acheter</a></div>
 <div class="lb" id="lb"><img alt=""></div>
 <script>
 const D=[["Alcatraz","États-Unis"],["ADX Florence","États-Unis"],["Le Dauphin Noir","Russie"],["Halden","Norvège"],["L'Île du Diable","Guyane"],["La Tour de Londres","Royaume-Uni"],["Le Château d'If","France"],["Cheyenne Mountain","États-Unis"],["La Réserve de semences","Svalbard"],["Fort Knox","États-Unis"],["La Fed de New York","États-Unis"],["La Souterraine","Paris"],["Burlington","Royaume-Uni"],["La Ligne Maginot","France"],["La Grande Évasion","Pologne"],["Le Mur de Berlin","Allemagne"],["La DMZ coréenne","Corée"],["L'évasion de Vaujour","Paris"],["L'évasion de Faïd","France"],["Le tunnel d'El Chapo","Mexique"],["Le casse d'Anvers","Belgique"]];
-const show=[0,9,15,7,6,13,16,5];  // dossiês no mosaico (o 1º é grande)
-let h=show.map((i,k)=>`<div class="tile${k===0?' big':''}"><img src="img/f/${String(i+1).padStart(2,'0')}.webp" alt="${D[i][0]}"><span><i>${String(i+1).padStart(2,'0')} · ${D[i][1]}</i>${D[i][0]}</span></div>`).join('');
-h+=`<div class="tile lock"><img src="img/f/21.webp" alt=""><span><i>Classé</i>+ 13 dossiers</span></div>`;
-document.getElementById('mosaic').innerHTML=h;
+const show=[0,9,15,7,6,13,16];
+let h=show.map(i=>`<div class="rond"><div class="c"><img loading="lazy" src="img/f/${String(i+1).padStart(2,'0')}.webp" alt="${D[i][0]}"></div><b>${D[i][0]}</b><i>${D[i][1]}</i></div>`).join('');
+h+=`<div class="rond lock"><div class="c"><strong>+14</strong><span>dossiers</span></div><b>Classé</b><i>dans le livre</i></div>`;
+document.getElementById('ronds').innerHTML=h;
 const lb=document.getElementById('lb');
 document.querySelectorAll('.pages img').forEach(im=>im.onclick=()=>{lb.querySelector('img').src=im.src;lb.style.display='flex'});
 lb.onclick=()=>lb.style.display='none';
